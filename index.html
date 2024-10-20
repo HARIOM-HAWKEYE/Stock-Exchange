@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Tracker </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="typing"></h1>
+    
+    <div class="controls">
+      <input type="text" id="stockInput" placeholder="Enter Stock Symbol (e.g., AAPL)" />
+      <button id="searchBtn">Search</button>
+      <select id="trendingStocks">
+        <option value="">Select a Trending Stock</option>
+      
+      </select>
+    </div>
+
+    <h2 class="slide-in">Trending Stocks</h2>
+    <div class="stock-info">
+      <table>
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Emoji</th>
+            <th>Price</th>
+            <th>Change</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody id="stockTableBody">
+        
+        </tbody>
+      </table>
+    </div>
+
+    <canvas id="stockChart" class="fade-in"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
